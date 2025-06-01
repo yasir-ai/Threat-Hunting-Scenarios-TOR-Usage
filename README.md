@@ -196,6 +196,17 @@ DeviceNetworkEvents
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\employee\Desktop\tor-shopping-list.txt`
 
+<br><br>
+
+```mermaid
+flowchart LR
+    A[File Download<br>🕓 2025-02-03 13:54:44<br>📄 tor-browser-windows-x86_64-portable.exe] --> B[Process Execution<br>🕓 2025-02-03 14:03:28<br>🔧 Silent install via /S flag]
+    B --> C[Process Execution<br>🕓 2025-02-03 14:04:44<br>🚀 firefox.exe & tor.exe launched]
+    C --> D[Network Connection<br>🕓 2025-02-03 14:08:22<br>🌐 Connected to 176.198.159.33:9001]
+    D --> E[More Connections<br>🕓 14:27 & 14:57<br>🔁 Ports 443, 9150, loopback SOCKS]
+    E --> F[File Creation<br>🕓 2025-02-03 14:58:22<br>📝 tor-shopping-list.txt created]
+```
+
 ---
 
 ## 📄 The Shopping List File
